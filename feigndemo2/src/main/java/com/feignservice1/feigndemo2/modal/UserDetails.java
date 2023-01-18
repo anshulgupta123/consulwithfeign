@@ -4,6 +4,7 @@ public class UserDetails {
 
 	private String state;
 	private String mobileNumber;
+	private String port;
 
 	public String getState() {
 		return state;
@@ -21,9 +22,17 @@ public class UserDetails {
 		this.mobileNumber = mobileNumber;
 	}
 
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		this.port = port;
+	}
+
 	@Override
 	public String toString() {
-		return "UserDetails [state=" + state + ", mobileNumber=" + mobileNumber + "]";
+		return "UserDetails [state=" + state + ", mobileNumber=" + mobileNumber + ", port=" + port + "]";
 	}
 
 }
